@@ -22,4 +22,4 @@ createdb test-odoo11
 ./odoo-bin --addons-path=addons --db-filter=test-odoo11$
 ```
 
-Good luck!
+Good luck my friends!
