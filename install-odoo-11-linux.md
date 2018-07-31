@@ -16,7 +16,7 @@ mkdir eleven-odoo
 cd eleven-odoo
 git clone https://github.com/odoo/odoo.git -b 11.0 --depth 1
 cd odoo
-sudo apt install build-essential python3-dev libxslt-dev libzip-dev libldap2-dev libsasl2-dev\n
+sudo apt install build-essential python3-dev libxslt-dev libzip-dev libldap2-dev libsasl2-dev
 pip install -r requirements.txt
 createdb test-odoo11
 ./odoo-bin --addons-path=addons --db-filter=test-odoo11$
