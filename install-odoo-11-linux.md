@@ -21,3 +21,5 @@ pip install -r requirements.txt
 createdb test-odoo11
 ./odoo-bin --addons-path=addons --db-filter=test-odoo11$
 ```
+
+Good luck!
