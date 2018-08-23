@@ -18,8 +18,8 @@ sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblc
 ##### 4) install less compiler
 
 ```
-$ sudo apt-get install npm
-$ sudo npm install -g less less-plugin-clean-css
+sudo apt-get install npm
+sudo npm install -g less less-plugin-clean-css
 ```
 
 ##### 5) setup odoo environment
@@ -27,8 +27,8 @@ $ sudo npm install -g less less-plugin-clean-css
 I recommend using [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/index.html)
 
 ```
-$ mkvirtualenv odoo -p /path/to/python2.7  # generally /usr/bin/python2.7
-$ which python  # should return:
+mkvirtualenv odoo -p /path/to/python2.7  # generally /usr/bin/python2.7
+which python  # should return:
 /Users/<user>/.virtualenvs/odoo/bin/python
 ```
 Use `deactivate` to get out of odoo environment, use `workon odoo` to activate the environment.
@@ -36,16 +36,16 @@ Use `deactivate` to get out of odoo environment, use `workon odoo` to activate t
 ##### 6) clone odoo
 
 ```
-$ cd ~/projects
-$ git clone https://github.com/odoo/odoo.git odoo
+cd ~/projects
+git clone https://github.com/odoo/odoo.git odoo
 ```
 
 ##### 7) Install odoo requirements
 
 ```
-$ cd odoo
-$ git checkout 9.0
-$ pip install -r requirements.txt
+cd odoo
+git checkout 9.0
+pip install -r requirements.txt
 
 # we need to upgrade psycopg2
 pip uninstall psycopg2
